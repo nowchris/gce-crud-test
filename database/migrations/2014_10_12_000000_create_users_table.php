@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 255);
-            $table->string('email', 255)->unique();
+            $table->string('name', 255); // 255 character limit
+            $table->string('email', 255)->unique(); // 255 character limit
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->integer('employee_id');
+            $table->integer('employee_id'); // Column parameter for test
             $table->rememberToken();
             $table->timestamps();
         });
