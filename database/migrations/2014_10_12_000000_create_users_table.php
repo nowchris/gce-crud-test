@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('email', 255)->unique(); // 255 character limit
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->integer('employee_id'); // Column parameter for test
+            $table->string('employee_id', 20); // 20 character limit for employee ID
             $table->rememberToken();
             $table->timestamps();
         });
