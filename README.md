@@ -1,3 +1,40 @@
+
+# GCE CRUD Test
+
+
+
+
+## Deployment
+
+Requirements: Laravel 9, Docker 3.6+
+
+First install all dependencies
+
+```zsh
+  npm install
+  composer install
+```
+
+Then migrate (ceate) database tables (these are generated from databases/migrations)
+
+```zsh
+  php artisan migrate
+  php artisan migrate:refresh (if changes are made)
+```
+
+Then open up the local environment (make sure Docker is open) and check that all containers sucessfully open
+
+```zsh
+  ./vendor/bin/sail up
+```
+
+Navigate your browser to the following
+
+```zsh
+  localhost/users (main page for CRUD)
+  localhost:8080 (phpmyadmin)
+```
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
