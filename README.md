@@ -15,7 +15,7 @@ First install all dependencies
   composer install
 ```
 
-Then migrate (ceate) database tables (these are generated from databases/migrations)
+Then migrate (create) database tables (these are generated from databases/migrations)
 
 ```zsh
   php artisan migrate
@@ -30,7 +30,7 @@ Then open up the local environment (make sure Docker is open) and check that all
 
 Navigate your browser to the following
 
-```zsh
+```
   localhost/users (main page for CRUD)
   localhost:8080 (phpmyadmin)
 ```
