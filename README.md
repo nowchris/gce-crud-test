@@ -6,7 +6,7 @@
 
 ## Deployment
 
-Requirements: Laravel 9, Docker 3.6+
+Requirements: Composer, Node.JS, Laravel 9, Docker 3.6+
 
 First install all dependencies
 
